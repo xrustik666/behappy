@@ -1,233 +1,329 @@
+/* General website properties */
 body {
-  padding: 0 30px;
-  font-size: 12px;
-  line-height: 26px;
-  font-family: "Arial", sans-serif;
-  color: #222222;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 
-  background: #ffffff url("img/bg-page.png") no-repeat top center;
-}
-
-h1 {
-  
-  font-weight: 400;
-  font-size: 24px;
-  line-height: normal;
-}
-
-h2 {
-  font-size: 20px;
-  line-height: normal;
-}
-
-aside {
-	content: "aside";
-  margin: 20px 0;
-  color: #c4c4c4;
-}
-
-pre,
-code {
-  background-color: #fafaff;
-  border: 1px solid #c6c4f4;
-  border-radius: 4px;
-  color: #3632ad;
-  font-family: "Courier New", "Courier", monospace;
-}
-
-pre {
-  padding: 5px;
-}
-
-code {
-  padding: 2px 5px;
-}
-
-pre code {
-  background-color: transparent;
-  border-radius: 0;
-  border: none;
-}
-
-
-blockquote {
-  padding-left: 14px;
-  border-left: 2px solid #6a2cce;
-
-  color: #6a2cce;
-}
-
-cite {
-  color: #222222;
-}
-
-time {
-  color: #6a2cce;
-}
-
-a[href] {
-  color: #0099ef;
-  text-decoration: underline;
-}
-
-del {
-  color: #ff4400;
-}
-
-ins {
-  color: rgb(105, 178, 83);
-}
-
-del,
-ins {
-  text-decoration: none;
-}
-
-em,
-i {
-  font-style: normal;
-}
-
-.avatar {
-  border-radius: 50%;
-}
-
-.avatar-container {
-  text-align: center;
-}
-
-.blog-navigation {
-  margin-bottom: 30px ;
-  /*
-  padding: 5px;
-  */
-  
-  background-color: rgba(68, 112, 196, 0.7);
-  border: 2px solid #2d508f;
-
-  color: #ffffff;
-}
-
-.blog-navigation h2 {
-  margin-top: 0;
-}
-
-.blog-navigation ul {
-  list-style: none;
-  padding-left: 0;
-  text-align: center ;
+  margin: 0px;
+  font-size: 14px;
+  font-family: "Arial";
+  color: rgba(36, 35, 35, 0.84);
   
 }
 
-.blog-navigation li {
-  margin-bottom: 5px;
-  display: inline-block ;
-  padding: 0px 20px 0px 20px ;
+/* ------ HEADER ------ */
+/* General header properties */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*border: 1px dashed black;*/
+  background: url("https://images2.imgbox.com/b9/81/nGcWYwEE_o.png") no-repeat top center;
+  min-height: 40vh;
 }
 
-.blog-navigation a {
-  color: #ffffff;
-}
-
-.skills dd {
-  margin: 0;
-  margin-bottom: 10px;
-
-  background-color: #e8e8e8;
-}
-
-.skills-level {
-  font-size: 12px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #4470c4;
-}
-
-.skills-level-ok {
-  background-color: #47bb52;
-}
-
-.days {
-  list-style: none;
-  padding-left: 0;
-}
-
-figure {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-figure img {
-  vertical-align: middle;
-  border: 8px solid rgb(202, 224, 248);
-}
-
-figcaption {
-  width: 502px;
-  padding-bottom: 8px;
-  font-size: 12px;
-  letter-spacing: 0.02em;
-  font-style: italic;
-  text-align: center;
-  background-color: rgb(202, 224, 248);
-}
-
-.pagination a {
-  display: inline-block;
-  margin-right: 30px;
-  margin-bottom: 15px;
-}
-
-.pagination {
-  text-align: center;
-  color: #888888;
-}
-
-.danger-text {
-  color: #ff4400;
-}
-
-.danger-block {
-  padding: 5px 10px;
-  background-color: #ffd0bf;
-}
-
-.no-danger-block {
-  padding: 5px 10px;
-  background-color: #c6f5f0;
-}
-
-footer {
-  margin-top: 30px;
-  padding-top: 10px;
-  color: #aaaaaa;
-  border-top: 1px solid #aaaaaa;
-}
-
-.page-title {
+/* Properties of website title */
+header #page-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 42px;
-  font-family: "Verdana", sans-serif;
+}
+
+/* Properties of navigation menu container */
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  
+  width: 40%;
+  background-color: rgba(68, 112, 196, 0.7);
+  border: 1px solid black;
+  color: #ffffff;
+  margin: 30px 0px 30px 0px;
+  
+}
+
+/* Properties of links inside navigation menu */
+nav a {
+  color: #ffffff;
+  font-family: 'Times New Roman';
+}
+
+/* ------ MAIN ------ */
+/* General main properties */
+main {
+  /*border: 1px dashed black;*/
+  /*height: 60vh;*/
+  display: flex;
+  flex-direction: column;
+}
+
+/*  */
+.introduction {
   text-align: center;
+  min-height: 60vh;
+  /*border-bottom: 1px dashed black;*/
 }
 
-.underline {
-  text-decoration: underline;
+#scrollToPhotos {
+  margin-top: 140px;
+  margin-bottom: 20px;
+  width: 400px;
+  height: 50px;
+  background-color: #3174f0;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
-.line-through {
-  text-decoration: line-through;
+#scrollToBegin {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
-.overline {
-  text-decoration: overline;
+.nordic-photos {
+  border-bottom: 1px dashed black;
+  background-color:rgba(223, 232, 244, 0.919);
+  min-height: 100vh;
 }
 
-.italic {
-  font-style: italic;
+/*  */
+.photos-heading {
+  text-align: center;
+  margin-bottom: 50px;
 }
 
-.post {
-	color: red ;
+/*  */
+hr {
+  margin-top: 20px;
+	width: 15%;
+	background-color: #0686ee; /* Для кроссбраузерности (Opera и Mozilla Firefox) */
+	height: 2px; /* Задаем толщину */
+	border: none; /* Отменяем отображение границы (в браузере Firefox) */
+}
+
+/*  */
+.photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin-bottom: 35px;
+  padding: 0px 10px 0px 10px;
+}
+
+/* Photos properies */
+.photo {
+  width: 50vh;
+  padding: 10px 10px 10px 10px;
+  border-radius: 55px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: scale(1.02);
+}
+
+.pop-up {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0, 0, 0, 75%);
+}
+
+.pop-up img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+}
+
+.closePopup {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: silver;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  min-height: 85vh;
+  background-color: #f8f9ff;
+}
+
+#email {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  
+}
+
+/* ------ FOOTER ------ */
+/* General footer properties */
+footer {
+  display: flex;
+  justify-content: center;
+  
+  /*border: 1px dashed black;*/
+
+  background-color: white;
+
+  min-height: 15vh;
+  padding: 0px 5px 0px 5px;
+  color: #aaaaaa;
+}
+
+.disclaimer {
+  font-size: 12px;
+  
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*------ Some adaptive features ------ */
+/* Font adaptation */
+@media (max-width: 900px){
+  
+  h2 {
+		font-size: 20px;
+	}
+	p {
+		font-size: 16px;
+	}
+  nav a {
+    font-size: 16px;
+  }
+  footer a {
+    font-size: 16px;
+  }
+  #scrollToPhotos {
+    width: 350px;
+  }
+}
+
+@media (max-width: 800px){
+  
+	h2 {
+		font-size: 22px;
+	}
+	p {
+		font-size: 18px;
+	}
+  nav a {
+    font-size: 18px;
+  }
+  footer a {
+    font-size: 18px;
+  }
+  #scrollToPhotos {
+    width: 300px;
+  }
+}
+
+@media (max-width: 700px){
+  
+	h2 {
+		font-size: 24px;
+	}
+	p {
+		font-size: 20px;
+	}
+  nav a {
+    font-size: 20px;
+  }
+  footer a {
+    font-size: 20px;
+  }
+  #scrollToPhotos {
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px){
+  
+	h2 {
+		font-size: 26px;
+	}
+	p {
+		font-size: 22px;
+	}
+  nav a {
+    font-size: 22px;
+  }
+  footer a {
+    font-size: 22px;
+  }
+  #scrollToPhotos {
+    width: 200px;
+  }
+}
+/*
+@media (max-width: 300px){
+	#scrollToPhotos {
+    width: 200px;
+  }
+}
+*/
+
+/* Photos adaptation */
+@media (max-width: 1400px){
+	.photo {
+		width: 30vh;
+	}
+}
+
+@media (max-width: 800px){
+	.photo {
+		width: 20vh;
+	}
+}
+
+@media (max-width: 700px){
+	.photo {
+		width: 15vh;
+	}
+}
+
+@media (max-width: 600px){
+	.photo {
+		width: 10vh;
+	}
+}
+
+@media (max-width: 100px){
+	.photo {
+		width: 5vh;
+	}
 }
